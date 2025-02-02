@@ -1,0 +1,100 @@
+:root{
+    --dark-color:#f4f4f4; 
+    --lighter-color:#FFF;
+    --light-text:hsl(200, 15%, 8%);
+    --dark-text:hsl(0, 0%, 100%);
+    --expand-btn-color-light:rgba(123, 143, 199, 0.741);
+    --expand-btn-color-dark:rgb(41, 146, 206);
+}
+.navbar-brand{
+    color: var(--light-text);
+}
+.themebtn{
+    color: var(--light-text);
+    border: none;
+}
+.section-1 .form-control{
+    background-color: var(--lighter-color);
+    color: var(--light-text);
+    border: none;
+}
+.section-1 .form-control::placeholder{
+    color: var(--light-text);
+}
+body{
+    background-color: var(--lighter-color);
+    color: var(--light-text);
+}
+.nav-link{
+    background-color: var(--lighter-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.section-1,.section-2 .container,.section-2{
+    background-color: var(--dark-color);
+}
+.img-container img{
+    width:100%;
+    border-radius: 5px 5px 0px 0px;
+    height: 170px;
+}
+.img-container{
+    width: 100%;
+}
+.cards h3{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cards{
+    width: 20%;
+    margin: 30px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    background-color: var(--lighter-color);
+    color: var(--light-text);
+}
+
+.country-details p{
+    padding-left: 10px;
+}
+.cards button {
+    margin-inline: 34%;
+    background-color: var(--expand-btn-color-light);
+    font-weight: bold;
+}
+.flag img{
+    width: 400px;
+}
+@media screen and (max-width:1400px) {
+    .cards{
+        width: calc(100%/3.5);
+        margin-inline: auto;
+    }
+}
+@media screen and (max-width:992px) {
+    .cards{
+        width: 40%;
+        margin-inline: auto;
+    }
+    .country{
+        margin-inline: auto;
+    }
+    .flag img{
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:770px) {
+    .cards{
+        width: 60%;
+        margin-inline: auto;
+    }
+}
+@media screen and (max-width:385px) {
+    .cards{
+        width: 85%;
+        margin-inline: auto;
+    }
+}
